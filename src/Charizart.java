@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+public class Charizart extends Pokemon implements Volador{
 
-public class Charizart {
+    public Charizart(String nombre, int nivel) {
+        super(nombre, nivel);
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println(nombre + " usa bola de fuego.");
+    }
+
+    @Override
+    public void volar() {
+        System.out.println(nombre + " está volando.");
+    }
 }
